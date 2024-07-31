@@ -1,6 +1,7 @@
 from addBook import addBook
 from adminChecker import adminChecker
 from connection import  Connection
+from removeBook import RemoveBook
 from showBooks import showBooks
 
 
@@ -35,8 +36,8 @@ def main():
                     else:
                         print("Invalid input")
                 case "C":
-                    pass
-                    break
+                    isbn = input("Enter ISBN for remove book : ")
+                    RemoveBook(isbn)
                 case "D":
                     pass
                     break
