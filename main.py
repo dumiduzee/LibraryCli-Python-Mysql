@@ -1,5 +1,6 @@
 from adminChecker import adminChecker
 from connection import  Connection
+from showBooks import showBooks
 
 
 def main():
@@ -21,8 +22,9 @@ def main():
             choice = input("Enter your choice: ")
             match choice:
                 case "A":
-                    pass
-                    break
+                    show = showBooks().showBookss()
+                    print(show)
+
                 case "B":
                     pass
                     break
