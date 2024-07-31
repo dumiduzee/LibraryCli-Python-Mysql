@@ -8,7 +8,7 @@ class Connection:
         database="library"
     )
     cursor = db.cursor()
-    commit = db.commit()
 
     def commits(self):
         return self.db.commit()
+

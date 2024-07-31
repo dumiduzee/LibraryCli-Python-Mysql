@@ -3,6 +3,7 @@ from adminChecker import adminChecker
 from connection import  Connection
 from removeBook import RemoveBook
 from showBooks import showBooks
+from updateBook import updateBook
 
 
 def main():
@@ -39,8 +40,8 @@ def main():
                     isbn = input("Enter ISBN for remove book : ")
                     RemoveBook(isbn)
                 case "D":
-                    pass
-                    break
+                    isbn = input("Enter ISBN for update book : ")
+                    updateBook(isbn)
                 case "E":
                     print("Programme terminated!!")
                     break
