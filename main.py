@@ -1,3 +1,4 @@
+from addBook import addBook
 from adminChecker import adminChecker
 from connection import  Connection
 from showBooks import showBooks
@@ -26,8 +27,13 @@ def main():
                     print(show)
 
                 case "B":
-                    pass
-                    break
+                    bookName = input("Enter book name : ")
+                    isbn = input("Enter ISBN : ")
+                    author = input(f"Enter author of {bookName} book: ")
+                    if bookName and isbn and author:
+                        addBook(bookName, isbn, author)
+                    else:
+                        print("Invalid input")
                 case "C":
                     pass
                     break
